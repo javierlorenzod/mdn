@@ -9,7 +9,7 @@ An MDN models the conditional distribution over a *scalar* response as a mixture
 where the mixture distribution parameters are output by a neural network, trained to maximize overall log-likelihood. The set of mixture distribution parameters is the following.
 <p align="center"><img alt="$$&#10;\{\pi^{(k)}, \mu^{(k)}, {\sigma^2}^{(k)}\}_{k=1}^K&#10;$$" src="svgs/89d606a285fc8c10fba5542b37dae2c4.svg" align="middle" width="147.2683674pt" height="22.87862775pt"/></p>
 
-In order to predict the response as a *multivariate* Gaussian distribution (for example, in [2]), we assume a fully factored distribution (i.e. a diagonal covariance matrix) and predict each dimesion separately. Another possible approach would be to use an auto-regressive method like in [3], but we leave that implementation for future work.
+In order to predict the response as a *multivariate* Gaussian distribution (for example, in [2]), we assume a fully factored distribution (i.e. a diagonal covariance matrix) and predict each dimension separately. Another possible approach would be to use an auto-regressive method like in [3], but we leave that implementation for future work.
 
 #### Usage
 
